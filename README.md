@@ -1,12 +1,12 @@
 # EverestTechnologies
-Everest Technologies es un EComerce responsive que permite la compra de Productos y Servicios Tecnologicos para Empresas.
+Everest Technologies es un ECommerce responsive que permite la compra de Productos y Servicios Tecnológicos para Empresas.
 Esta basado en el framework Bootstrap 5.0 y fue desarrollado con React Js, JavaScript, CSS3 y HTML5.
-
-El proyecto se encuenta en desarrollo y cuenta con:
+El proyecto se encuenta en etapa de desarrollo.
+Elementos
 Barra de Navegación (Navbar): tres categorías navegables implementadas con React Router Dom.
-En el HOME se muestran todos los productos de la base de datos.
-Si se hace un clic en cualquier producto se accede a la vista personalizada del producto seleccionado por el cliente, con su imagen, precio, stock y descripción.
-Vista del carrito de compras: si hay productos en el carrito, muestra el detalle del producto elegido, con su precio, la cantidad del mismo y el total. También hacia un lado, encotramos el resumen de la compra y un botón para finalizar la misma.
+Home: En el HOME se muestran todos los productos de la base de datos.
+Detalle de Producto: Si se hace un clic en cualquier producto se accede a la vista personalizada del producto seleccionado por el cliente, con su imagen, precio, stock y descripción.
+Carrito de compras: si hay productos en el carrito, muestra el detalle del producto elegido, con su precio, la cantidad del mismo y el total. También hacia un lado, encotramos el resumen de la compra y un botón para finalizar la misma.
 Si no hay productos aparecerá, de manera condicional, un alert provisto por bootstrap donde nos avisará que no existen productos seleccionados.
 
 EVEREST TECHONOLOGIES en Acción 💻
