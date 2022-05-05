@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Wrapper = styled.div`
     padding: 20px 20px;
     display: flex;
-    color: primary;
+    color: #147293;
     align-items: center;
     justify-content: space-between;
 `;
@@ -34,9 +34,9 @@ const Right = styled.div`
 `;
 
 const MenuItem = styled.div`
-    font-size: 14px;
+    font-size: 20px;
     cursor: pointer;
-    margin-left: 25px;
+    margin-left: 30px;
 `;
 
 
@@ -55,7 +55,7 @@ const ProductAmount = styled.div`
 
 //ItemList
 const ProductsContainer = styled.div`
-    padding: 20px;
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -79,13 +79,13 @@ const Info = styled.div`
 
 const ProductContainer = styled.div`
     flex: 1;
-    margin: 5px;
-    min-width: 280px;
-    height: 350px;
+    margin: 0px;
+    min-width: 700px;
+    height: 420px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5fbfd;
+    background-color: none;
     position: relative;
     &:hover ${Info}{
         opacity: 1;
@@ -128,7 +128,7 @@ const DetailContainer = styled.div`
 `;
 
 const WrapperDetail = styled.div`
-    padding: 50px;
+    padding: 5px;
     display: flex;
 `;
 
@@ -139,13 +139,13 @@ const ImgContainer = styled.div`
 
 const ImageDetail = styled.img`
     width: 100%;
-    height: 90vh;
-    object-fit: cover;
+    object-fit: scale-down;
 `;
 
 const InfoContainer = styled.div`
     flex: 1;
-    padding: 0px 50px;
+    width: 50%;
+    padding: 0px 20px;
 `;
 
 const Title = styled.h1`

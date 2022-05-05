@@ -1,24 +1,26 @@
 import { AppBar } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
-import { Wrapper, Logo, MenuItem, Left, Center, Right } from './styledComponents';
+import { Wrapper, Logo, MenuItem, Left, Center, Right, Image } from './styledComponents';
+import everestlogo from "../assets/everestlogo.jpg"
 
 const NavBar = () => {
     return (
-        <AppBar position="relative" color= "secondary">
+        <AppBar position="relative" color= "transparent">
             <Wrapper>
                 <Left>
-                    <Link to='/' style={{textDecoration: "none", color: "wblack"}}><Logo>Everest Technologies</Logo></Link>
+                    <Link to='/' style={{textDecoration: "none", color: "wblack"}}>
+                    <Logo><Image src = {everestlogo} ></Image></Logo></Link>
                 </Left>
                 <Center>
-                    <Link to='/category/Productos' style={{textDecoration: "none", color: "wblack"}}><MenuItem>Productos</MenuItem></Link>
-                    <Link to='/category/Servicios' style={{textDecoration: "none", color: "wblack"}}><MenuItem>Servicios</MenuItem></Link>
-                    <Link to='/category/Novedades' style={{textDecoration: "none", color: "wblack"}}><MenuItem>Novedades</MenuItem></Link>                    
+                    <Link to='/category/Productos' style={{color: "#147293"}}><MenuItem>Productos</MenuItem></Link>
+                    <Link to='/category/Servicios' style={{color: "#147293"}}><MenuItem>Servicios</MenuItem></Link>
+                    <Link to='/category/Novedades' style={{color: "#147293"}}><MenuItem>Novedades</MenuItem></Link>                    
                 </Center>
                 <Right>
                     <MenuItem>Register</MenuItem>
                     <MenuItem>LogIn</MenuItem>
-                    <MenuItem><Link to='/cart' style={{textDecoration: "none", color: "wblack"}}><CartWidget /></Link></MenuItem>
+                    <MenuItem><Link to='/cart' style={{textDecoration: "none", color: "#147293"}}><CartWidget /></Link></MenuItem>
                 </Right>
             </Wrapper>
         </AppBar>

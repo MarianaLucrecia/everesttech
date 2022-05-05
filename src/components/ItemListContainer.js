@@ -12,7 +12,7 @@ const ItemListContainer =()=>{
     const fetchFromFirestore = async(idCategory) => {
       let hasCategory;
       if (idCategory) {
-        hasCategory=query(collection(db, "products"), where ('categoryId', '==', idCategory));
+        hasCategory=query(collection(db, "products"), where ('idCategory', '==', idCategory));
       } else {
         hasCategory=query(collection(db, "products"), orderBy ('name'));
         console.log ('fechtfromfirestore', "se va por el else", hasCategory);
